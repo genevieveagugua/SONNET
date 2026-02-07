@@ -6,6 +6,10 @@ A collaborative web design and development project showcasing modern design prin
 
 Visit the deployed project: [https://sonnet-blue.vercel.app/](https://sonnet-blue.vercel.app/)
 
+## Week 1 Presentation
+
+Here: [https://www.canva.com/design/DAHAR45mQIk/MdzxUPqeZ9UZahkHa4hlqg/edit](https://www.canva.com/design/DAHAR45mQIk/MdzxUPqeZ9UZahkHa4hlqg/edit)
+
 ## Project Overview
 
 Sonnet provides a minimal web experience that allows users to share a song that reminds them of someone, paired with a personal note. Each shared song is accessible via a unique, customizable link that opens a beautifully designed page displaying the song embed and the message.
