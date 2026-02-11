@@ -1,0 +1,84 @@
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.btn,
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary,
+button[type="submit"],
+#hero button:first-of-type {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary,
+#hero button:last-of-type {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+}
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+article,
+.preview-card {
+  background: var(--card);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+/* ============================= */
+/* FORM ELEMENTS */
+/* ============================= */
+
+label {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+}
+
+input {
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--input);
+  color: var(--foreground);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ============================= */
+/* TYPOGRAPHY */
+/* ============================= */
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  color: var(--muted-foreground);
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid var(--primary);
+  padding-left: var(--spacing-md);
+}
