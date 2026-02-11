@@ -1,0 +1,55 @@
+/* LANDING HERO */
+
+#hero p:first-of-type {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+/* CTA SECTION */
+
+#create-now {
+  text-align: center;
+}
+
+#create-now button {
+  margin: var(--spacing-md) 0;
+}
+
+/* REVIEW SECTION */
+
+#review article {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+/* AUTH PAGES */
+
+form h4,
+form h6 {
+  font-size: 1.5rem;
+  color: var(--foreground);
+}
+
+form p {
+  font-size: 0.9rem;
+}
+
+/* PREVIEW NOTE */
+
+.note {
+  background: rgba(255, 255, 255, 0.04);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
