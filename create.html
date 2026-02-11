@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreateNote</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/component.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form>
+      <h4>Compose your note</h4>
+      <p>Share a song that speaks for you, along with a personal message.</p>
+      <label for="song-link">Song link</label>
+      <input type="text" id="song-link" name="song-link" placeholder="https://open.spotify.com/track/... Copy and paste a link from Spotify, Apple Music, or YouTube Music" />
+
+      <label for="From">From</label>
+      <input type="text" id="from-name" name="from-name" placeholder="Your name" />
+
+      <label for="to">To</label>
+      <input
+        type="text"
+        id="to-name"
+        name="to-name"
+        placeholder="Recipient's name"
+      />
+
+      <label for="your-note">Your note</label>
+      <input
+        type="text"
+        id="your-note"
+        name="your-note"
+        placeholder="Write a heartfelt message here..."
+      />
+
+      <button class="btn-primary">Preview Note</button>
+    </form>
+  </body>
+</html>
