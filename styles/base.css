@@ -1,39 +1,46 @@
-    :root {
-      --background: #1a0b0e;
-      --foreground: #fdf5f6;
-      --border: #3a1a27;
-      --input: #2d1418;
-      --primary: #f22b6d;
-      --primary-foreground: #fdf5f6;
-      --secondary: #2d1418;
-      --secondary-foreground: #fdf5f6;
-      --muted: #2b151c;
-      --muted-foreground: #a38b8e;
-      --success: #214030;
-      --success-foreground: #e6f9f0;
-      --accent: #ff8da1;
-      --accent-foreground: #1a0b0e;
-      --destructive: #550019;
-      --destructive-foreground: #ffecef;
-      --warning: #4a2a16;
-      --warning-foreground: #ffefd8;
-      --card: #2a1218;
-      --card-foreground: #fdf5f6;
-      --sidebar: #16070a;
-      --sidebar-foreground: #fdf5f6;
-      --sidebar-primary: #3b1723;
-      --sidebar-primary-foreground: #fdf5f6;
-      --radius-sm: 4px;
-      --radius-md: 8px;
-      --radius-lg: 12px;
-      --radius-xl: 18px;
-      --font-family-body: Shantell Sans;
-    }
+:root {
+  --background: #1a0b0e;
+  --foreground: #fdf5f6;
+  --border: #3a1a27;
+  --input: #2d1418;
+  --primary: #f22b6d;
+  --primary-foreground: #fdf5f6;
+  --secondary: #2d1418;
+  --secondary-foreground: #fdf5f6;
+  --muted: #2b151c;
+  --muted-foreground: #a38b8e;
+  --success: #214030;
+  --success-foreground: #e6f9f0;
+  --accent: #ff8da1;
+  --accent-foreground: #1a0b0e;
+  --destructive: #550019;
+  --destructive-foreground: #ffecef;
+  --warning: #4a2a16;
+  --warning-foreground: #ffefd8;
+  --card: #2a1218;
+  --card-foreground: #fdf5f6;
+  --sidebar: #16070a;
+  --sidebar-foreground: #fdf5f6;
+  --sidebar-primary: #3b1723;
+  --sidebar-primary-foreground: #fdf5f6;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 18px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --text-sm: 1em;
+  --text-md: 2em;
+  --text-lg: 3em;
+  --text-xl: 4em;
+  --font-family-body: Shantell Sans;
+}
 
-    body {
-      font-family: var(--font-family-body);
-      margin: 0;
-      padding: 0;
-    }
-
-    
+body {
+  font-family: var(--font-family-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+}
