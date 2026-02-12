@@ -20,9 +20,8 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <nav>
-        
+    <header class="header">
+      <nav class="nav__container">
         <a href="#">SONNET</a>
 
         <a href="#hero">Home</a>
@@ -32,13 +31,14 @@
         <a href="#create-now">CTA</a>
 
         <a href="#">Login</a>
-        <a href="#">Create a Note Now</a>
+        <a href="#">Create a Note</a>
+        <i class="fa-solid fa-bars"></i>
       </nav>
 
-      <aside id="hero">
+      <aside class="hero__aside" id="hero">
         <p>Now in beta testing</p>
         <h1>
-          Share a song. leave a thought. <br />Leave a thought. <br />
+          Share a song. <br />Leave a thought. <br />
           Light up their day.
         </h1>
         <p>
@@ -52,7 +52,7 @@
         </div>
         <p>Loved by our beta testers</p>
       </aside>
-      <picture>
+      <picture class="hero__image">
         <source
           media="(min-width: 1024px)"
           srcset="images/hero-image.png"
@@ -63,40 +63,37 @@
           srcset="images/hero-image.png"
           type="image/png"
         />
-        <img src="images/hero-image.png" alt="Hero Image" width="200" />
+        <img src="images/hero-image.png" alt="Hero Image" width="400" />
       </picture>
     </header>
-    <main>
+    <main class="main">
       <!-- HOW IT WORKS -->
-      <section id="how-it-works">
+      <section class="how-it-works__container" id="how-it-works">
         <h2>Curate a note for your lover</h2>
         <p>
           Whether it's a late-night thought, a shared memory, or just a vibe,
           SONNET helps you send it with the perfect song and a personal touch.
         </p>
 
-        <ol>
-          <li>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <h3>1. Pick a song</h3>
+        <ol class="list__container">
+          <li class="list__item">
+            <h3>1. Pick a song <i class="fa-solid fa-magnifying-glass"></i></h3>
             <p>
               Search from millions of songs across all genres and eras. Find the
               one that speaks your heart.
             </p>
           </li>
 
-          <li>
-            <i class="fa-solid fa-pencil"></i>
-            <h3>2. Write a note</h3>
+          <li class="list__item">
+            <h3>2. Write a note <i class="fa-solid fa-pencil"></i></h3>
             <p>
               Share your thoughts, memories, or just a vibe. Make it personal.
               Your words appear in paper-like stationery.
             </p>
           </li>
 
-          <li>
-            <i class="fa-regular fa-paper-plane"></i>
-            <h3>3. Share the moment</h3>
+          <li class="list__item">
+            <h3>3. Share the moment <i class="fa-regular fa-paper-plane"></i></h3>
             <p>
               Send a beautiful link via text, email, or social media. No account
               needed to view or listen.
@@ -136,7 +133,7 @@
         </p>
         <div>
           <article>
-            <p>Michael R.</p>
+            <p class="article__name">Michael R.</p>
             <p>Best-friend's birthday</p>
             <blockquote>
               "I sent my best friend a SONNET for her birthday, and she said it
@@ -147,7 +144,7 @@
           </article>
 
           <article>
-            <p>Genevieve A.</p>
+            <p class="article__name">Genevieve A.</p>
             <p>Relationship Anniversary</p>
             <blockquote>
               "We hit play at the same time on a call. It felt like being in the
@@ -157,7 +154,7 @@
           </article>
 
           <article>
-            <p>Alex M.</p>
+            <p class="article__name">Alex M.</p>
             <p>Cheering up a friend</p>
             <blockquote>
               "Sent my friend a song on a hard day with a little note. She saved
@@ -173,9 +170,7 @@
         <h2>Ready to send a midnight melody?</h2>
         <p>
           Join thousands of people turning simple links into small,
-          unforgettable rituals. Its free to get started. Join thousands of
-          people turning simple links into small, unforgettable rituals. Its
-          free to get started.
+          unforgettable rituals. Its free to get started. 
         </p>
         <button class="btn-primary">Create a Note for Free</button>
         <p>No credit card required.</p>
