@@ -31,10 +31,16 @@
   --spacing-md: 16px;
   --spacing-lg: 24px;
   --spacing-xl: 32px;
+  --spacing-2xl: 64px;
   --text-sm: 1em;
+  --text-nm: 1.5em;
   --text-md: 2em;
   --text-lg: 3em;
   --text-xl: 4em;
+  --width-container: 1200px;
+  --width-container-sm: 900px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
   --font-family-body: Shantell Sans;
 }
 
@@ -43,4 +49,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
