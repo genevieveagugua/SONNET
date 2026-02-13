@@ -11,10 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/de3cc7cb54.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <header>
+      <nav class="nav__container">
+        <a href="index.html">SONNET</a>
+      </nav>
+    </header>
     <main class="preview-page">
-      <section class="preview-card">
+      <section class="preview-card card-base flex-col gap-md">
         <!-- Song Preview -->
         <!-- Spotify Embed -->
         <iframe
@@ -50,9 +59,15 @@
         </article>
 
         <!-- Actions -->
-        <div class="actions">
-          <button class="btn btn-secondary">Edit note</button>
-          <button class="btn btn-primary">Share link</button>
+        <div class="actions flex-row gap-md">
+          <a href="create.html">
+            <button class="btn btn-secondary">
+              <i class="fa-regular fa-pen-to-square"></i>Edit note
+            </button>
+          </a>
+          <button class="btn btn-primary">
+            <i class="fa-regular fa-copy"></i>Copy link
+          </button>
         </div>
       </section>
     </main>
