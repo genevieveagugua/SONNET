@@ -15,33 +15,65 @@
     />
   </head>
   <body>
-    <form>
-      <h6>Create your account</h6>
-      <p>Start sending songs and handwritten notes in minutes.</p>
-      <label for="first-name">First name</label>
-      <input type="text" id="first-name" name="first-name" placeholder="Ada" />
+    <header>
+      <nav class="nav__container">
+        <a href="index.html">SONNET</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+      <form class="form-centered card-base full-width max-width-sm flex-col gap-md">
+        <h6 class="text-center">Create your account</h6>
+        <p class="text-center text-medium">Start sending songs and handwritten notes in minutes.</p>
+        
+        <div class="field-row flex-row gap-md">
+          <div class="field-group flex-col gap-sm">
+            <label for="first-name" class="text-small">First name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Ada"
+            />
+          </div>
 
-      <label for="last-name">Last name</label>
-      <input type="text" id="last-name" name="last-name" placeholder="Lovelace" />
+          <div class="field-group flex-col gap-sm">
+            <label for="last-name" class="text-small">Last name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Lovelace"
+            />
+          </div>
+        </div>
 
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="adalovelace@me.com"
-      />
+        <div class="field-group flex-col gap-sm">
+          <label for="email" class="text-small">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="adalovelace@me.com"
+          />
+        </div>
 
-      <label for="password">Password</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="password"
-      />
+        <div class="field-group flex-col gap-sm">
+          <label for="password" class="text-small">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="password"
+          />
+        </div>
 
-      <button type="submit">Create Account</button>
-      <p>Already have an account? <a href="login.html">Log in</a></p>
-    </form>
+        <button type="submit">Create Account</button>
+        <p class="text-center text-small">Already have an account? <a href="login.html">Log in</a></p>
+      </form>
+      </section>
+    </main>
   </body>
 </html>

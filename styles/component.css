@@ -1,84 +1,165 @@
-/* ============================= */
 /* BUTTONS */
-/* ============================= */
 
 .btn,
 button {
   padding: 0.75rem 1.5rem;
+  border: none;
   border-radius: var(--radius-lg);
   font-weight: 600;
-  transition: 0.3s ease;
+  font-family: var(--font-family-body);
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
-.btn-primary,
-button[type="submit"],
-#hero button:first-of-type {
-  background: var(--primary);
-  color: var(--primary-foreground);
-}
-
-.btn-primary:hover {
+.btn:hover,
+button:hover {
   opacity: 0.85;
 }
 
-.btn-secondary,
-#hero button:last-of-type {
+.btn:active,
+button:active {
+  transform: scale(0.98);
+}
+
+.btn-primary,
+button[type="submit"] {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-lg);
+}
+
+.btn-secondary {
   background: transparent;
   border: 1px solid var(--border);
   color: var(--foreground);
 }
 
-/* ============================= */
-/* CARD */
-/* ============================= */
-
-article,
-.preview-card {
-  background: var(--card);
-  padding: var(--spacing-lg);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border);
+.btn-secondary:hover {
+  background: var(--muted);
 }
 
-/* ============================= */
-/* FORM ELEMENTS */
-/* ============================= */
+/* NAVIGATION */
+
+.nav__container a {
+  text-decoration: none;
+  color: var(--foreground);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-sm);
+  transition: color 0.2s ease;
+}
+
+.nav__container a:hover {
+  color: var(--accent);
+}
+
+/* LIST ITEMS (COMPONENT) */
+
+.list__item {
+  background-color: var(--muted);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+.list__item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--foreground);
+}
+
+/* Responsive: Tablet */
+@media (min-width: 640px) {
+  .list__item {
+    padding: var(--spacing-xl);
+  }
+}
+
+/* Responsive: Desktop */
+@media (min-width: 1024px) {
+  .list__item {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* REVIEW CARDS */
+
+.article__name {
+  color: var(--foreground);
+  font-weight: var(--font-weight-bold);
+}
+
+#review footer {
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+  font-style: italic;
+}
+
+/* FORMS */
 
 label {
-  font-size: 0.9rem;
+  display: block;
   color: var(--muted-foreground);
+  margin-bottom: var(--spacing-sm);
 }
 
-input {
+input,
+textarea {
+  width: 100%;
   padding: 0.75rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   background: var(--input);
   color: var(--foreground);
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border-color: var(--primary);
 }
 
-/* ============================= */
-/* TYPOGRAPHY */
-/* ============================= */
-
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: var(--spacing-sm);
-}
-
-p {
+input::placeholder,
+textarea::placeholder {
   color: var(--muted-foreground);
+  opacity: 0.6;
 }
 
-blockquote {
-  font-style: italic;
-  border-left: 3px solid var(--primary);
-  padding-left: var(--spacing-md);
+/* FOOTER LINKS */
+
+footer a {
+  text-decoration: none;
+  color: var(--foreground);
+  font-size: var(--text-sm);
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* NOTE CARD COMPONENT */
+
+.note {
+  background: rgba(255, 255, 255, 0.04);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.actions {
+  justify-content: space-between;
+  margin-top: var(--spacing-md);
 }

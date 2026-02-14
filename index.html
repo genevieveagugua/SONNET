@@ -30,8 +30,8 @@
         <a href="#review">Review</a>
         <a href="#create-now">CTA</a>
 
-        <a href="#">Login</a>
-        <a href="#">Create a Note</a>
+        <a href="login.html">Login</a>
+        <a href="create.html"><button>Create a Note</button></a>
         <i class="fa-solid fa-bars"></i>
       </nav>
 
@@ -68,15 +68,15 @@
     </header>
     <main class="main">
       <!-- HOW IT WORKS -->
-      <section class="how-it-works__container" id="how-it-works">
+      <section class="how-it-works__container section-base" id="how-it-works">
         <h2>Curate a note for your lover</h2>
         <p>
           Whether it's a late-night thought, a shared memory, or just a vibe,
           SONNET helps you send it with the perfect song and a personal touch.
         </p>
 
-        <ol class="list__container">
-          <li class="list__item">
+        <ol class="list__container flex-col gap-lg">
+          <li class="list__item flex-col gap-md text-left">
             <h3>1. Pick a song <i class="fa-solid fa-magnifying-glass"></i></h3>
             <p>
               Search from millions of songs across all genres and eras. Find the
@@ -84,7 +84,7 @@
             </p>
           </li>
 
-          <li class="list__item">
+          <li class="list__item flex-col gap-md text-left">
             <h3>2. Write a note <i class="fa-solid fa-pencil"></i></h3>
             <p>
               Share your thoughts, memories, or just a vibe. Make it personal.
@@ -92,8 +92,10 @@
             </p>
           </li>
 
-          <li class="list__item">
-            <h3>3. Share the moment <i class="fa-regular fa-paper-plane"></i></h3>
+          <li class="list__item flex-col gap-md text-left">
+            <h3>
+              3. Share the moment <i class="fa-regular fa-paper-plane"></i>
+            </h3>
             <p>
               Send a beautiful link via text, email, or social media. No account
               needed to view or listen.
@@ -103,7 +105,7 @@
       </section>
 
       <!-- TEMPLATES -->
-      <section id="templates">
+      <section id="templates" class="section-base">
         <h2>More human than a text message.</h2>
         <p>
           Music unlocks memory and emotion like nothing else. Combine it with
@@ -125,14 +127,14 @@
       </section>
 
       <!-- REVIEW -->
-      <section id="review">
+      <section id="review" class="section-base">
         <h2>What people are saying</h2>
         <p>
           Tiny rituals, big feelings. See how others are using Sonnet to say
           what a text can't.
         </p>
-        <div>
-          <article>
+        <div class="flex-col gap-lg">
+          <article class="card-base flex-col gap-md text-left">
             <p class="article__name">Michael R.</p>
             <p>Best-friend's birthday</p>
             <blockquote>
@@ -143,7 +145,7 @@
             </blockquote>
           </article>
 
-          <article>
+          <article class="card-base flex-col gap-md text-left">
             <p class="article__name">Genevieve A.</p>
             <p>Relationship Anniversary</p>
             <blockquote>
@@ -153,7 +155,7 @@
             </blockquote>
           </article>
 
-          <article>
+          <article class="card-base flex-col gap-md text-left">
             <p class="article__name">Alex M.</p>
             <p>Cheering up a friend</p>
             <blockquote>
@@ -166,13 +168,13 @@
       </section>
 
       <!-- CTA -->
-      <section id="create-now">
+      <section id="create-now" class="section-base">
         <h2>Ready to send a midnight melody?</h2>
         <p>
           Join thousands of people turning simple links into small,
-          unforgettable rituals. Its free to get started. 
+          unforgettable rituals. Its free to get started.
         </p>
-        <button class="btn-primary">Create a Note for Free</button>
+        <a href="create.html" class="btn-primary">Create a Note for Free</a>
         <p>No credit card required.</p>
       </section>
     </main>

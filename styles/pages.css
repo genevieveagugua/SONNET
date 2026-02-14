@@ -1,12 +1,24 @@
-/* LANDING HERO */
+/* LANDING PAGE SPECIFIC STYLES */
 
+/* Hero Section */
 #hero p:first-of-type {
   color: var(--accent);
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
-/* CTA SECTION */
+#hero button:first-of-type {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
 
+#hero button:last-of-type {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+}
+
+/* CTA Section */
 #create-now {
   text-align: center;
 }
@@ -15,41 +27,134 @@
   margin: var(--spacing-md) 0;
 }
 
-/* REVIEW SECTION */
-
+/* Review Section - Page Specific */
 #review article {
   display: grid;
   gap: var(--spacing-sm);
 }
 
-/* AUTH PAGES */
+/* CENTERED FORM (AUTH & CREATE PAGES) */
 
-form h4,
-form h6 {
-  font-size: 1.5rem;
-  color: var(--foreground);
-}
-
-form p {
-  font-size: 0.9rem;
-}
-
-/* PREVIEW NOTE */
-
-.note {
-  background: rgba(255, 255, 255, 0.04);
+/* Use grid on body to center form */
+main:has(.form-centered) {
+  display: grid;
+  place-items: center;
   padding: var(--spacing-lg);
-  border-radius: var(--radius-lg);
 }
 
-.note-header {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
+/* Form container - extends .card-base */
+.form-centered {
+  padding: var(--spacing-2xl);
 }
 
-.actions {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--spacing-md);
+/* Headings */
+.form-centered h4,
+.form-centered h6 {
+  font-size: 1.75rem;
+  color: var(--foreground);
+  text-align: center;
+  margin: 0;
+}
+
+/* Subtitle paragraph - uses utility classes */
+.form-centered > p:first-of-type {
+  color: var(--muted-foreground);
+  margin: 0;
+}
+
+/* Field group (label + input) - uses utility classes */
+
+/* Row for two fields side-by-side - uses utility classes */
+
+/* Labels - uses .text-small utility */
+
+/* Inputs and textareas */
+.form-centered input,
+.form-centered textarea {
+  width: 100%;
+}
+
+/* Buttons */
+.form-centered button {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Bottom paragraphs (links and terms) - uses utility classes */
+.form-centered > p:not(:first-of-type) {
+  color: var(--muted-foreground);
+  margin: 0;
+}
+
+.form-centered p a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.form-centered p a:hover {
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .form-centered h4,
+  .form-centered h6 {
+    font-size: 2rem;
+  }
+}
+
+/* PREVIEW PAGE */
+
+.preview-page {
+  max-width: 500px;
+  margin: var(--spacing-2xl) auto;
+  padding: var(--spacing-xl);
+}
+
+.preview-card iframe {
+  height: 232px;
+}
+
+.preview-card .note {
+  margin: 0;
+}
+
+.preview-card .actions {
+  margin-top: var(--spacing-sm);
+}
+
+.preview-card .actions button {
+  flex: 1;
+}
+
+/* Responsive: Larger screens */
+@media (min-width: 640px) {
+  .preview-page {
+    margin: var(--spacing-2xl) auto;
+  }
+
+  .preview-card {
+    padding: var(--spacing-xl);
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .preview-page {
+    margin: 60px auto;
+  }
+}
+
+/* CREATE PAGE */
+
+.create-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.create-container textarea {
+  min-height: 200px;
+  resize: vertical;
 }
