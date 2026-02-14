@@ -135,6 +135,105 @@ The project follows a modular CSS architecture implementing the DRY (Don't Repea
 
 ---
 
+## Styling Guide
+
+### CSS Custom Properties (Design Tokens)
+
+The project uses CSS custom properties (variables) to maintain consistency and enable easy theme modifications. All variables are defined in `base.css` under the `:root` selector.
+
+#### Color System
+
+**Background Colors**
+- `--background: #1a0b0e` - Deep burgundy, main background color creating a romantic midnight atmosphere
+- `--card: #2a1218` - Slightly lighter burgundy for elevated surfaces and cards
+- `--sidebar: #16070a` - Darkest shade for navigation and footer sections
+- `--muted: #2b151c` - Subtle background for list items and secondary surfaces
+
+**Foreground Colors**
+- `--foreground: #fdf5f6` - Off-white text color for high readability on dark backgrounds
+- `--muted-foreground: #a38b8e` - Muted mauve for secondary text, labels, and descriptions
+
+**Brand Colors**
+- `--primary: #f22b6d` - Vibrant pink for primary actions, links, and CTAs
+- `--accent: #ff8da1` - Lighter pink for highlights and hover states
+
+**Interface Colors**
+- `--border: #3a1a27` - Subtle borders that blend with the dark theme
+- `--input: #2d1418` - Input field backgrounds for form elements
+
+#### Spacing System
+
+The spacing system follows an 8px base unit for consistent rhythm:
+
+- `--spacing-sm: 8px` (0.5rem) - Tight spacing for inline elements
+- `--spacing-md: 16px` (1rem) - Default spacing between elements
+- `--spacing-lg: 24px` (1.5rem) - Section spacing and card padding
+- `--spacing-xl: 32px` (2rem) - Large gaps between major sections
+- `--spacing-2xl: 64px` (4rem) - Extra-large spacing for page margins
+
+#### Border Radius
+
+Rounded corners create a softer, more friendly aesthetic:
+
+- `--radius-sm: 4px` - Subtle rounding for small elements
+- `--radius-md: 8px` - Standard rounding for inputs and small components
+- `--radius-lg: 12px` - Primary rounding for cards, buttons, and containers
+- `--radius-xl: 18px` - Pronounced rounding for special emphasis
+
+#### Typography Scale
+
+Relative sizing using em units for scalability:
+
+- `--text-sm: 1em` - Small text and captions
+- `--text-nm: 1.5em` - Normal body text
+- `--text-md: 2em` - Section headings
+- `--text-lg: 3em` - Page headings
+- `--text-xl: 4em` - Hero headings
+
+**Font Weights**
+- `--font-weight-regular: 400` - Body text
+- `--font-weight-bold: 700` - Headings and emphasis
+
+**Font Family**
+- `--font-family-body: Shantell Sans` - Handwritten-style font that evokes personal, intimate communication
+
+#### Layout Constraints
+
+Container widths ensure readable line lengths and proper composition:
+
+- `--width-container: 1200px` - Maximum width for main content areas
+- `--width-container-sm: 900px` - Constrained width for focused content like forms
+
+### Design Token Usage
+
+Variables are used consistently throughout the codebase:
+
+```css
+/* Example: Card component */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+}
+
+/* Example: Primary button */
+.btn-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-lg);
+}
+```
+
+This approach ensures:
+- **Consistency**: Same values used across all components
+- **Maintainability**: Update once, changes everywhere
+- **Themability**: Easy to create alternative color schemes
+- **Accessibility**: Semantic color naming for clear intent
+
+---
+
 ## Project Contributions
 
 ### Genevieve Agugua
