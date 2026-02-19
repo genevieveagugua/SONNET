@@ -48,6 +48,10 @@
   /* Container Widths */
   --width-container: 1200px;
   --width-container-sm: 900px;
+  --width-container-mobile-sidebar: 250px;
+
+  /* Container Heights */
+  --height-container: 100vh;
 
   /* Font Weights */
   --font-weight-regular: 400;
