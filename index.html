@@ -22,6 +22,7 @@
     <!-- HEADER -->
     <header class="header">
       <nav class="nav__container">
+        <!-- Larger Screens -->
         <a href="#">SONNET</a>
 
         <a href="#hero">Home</a>
@@ -32,7 +33,24 @@
 
         <a href="login.html">Login</a>
         <a href="create.html"><button>Create a Note</button></a>
+
+        <!-- Smaller Screens -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i>
+        </label>
+        
+        <div class="mobile__nav">
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+        <a href="#hero">Home</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#templates">Templates</a>
+        <a href="#review">Review</a>
+        <a href="#create-now">CTA</a>
+
+        <a href="login.html">Login</a>
+        <a href="create.html"><button>Create a Note</button></a>
+        </div>
       </nav>
 
       <aside class="hero__aside" id="hero">
