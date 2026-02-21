@@ -18,6 +18,11 @@ Here: [https://www.canva.com/design/DAHBKG5AyL4/jFfYFtQun9lq300hvGqayg/edit](htt
 
 ---
 
+## Genevieve's case study article: https://medium.com/@kelechigenevieveagugua/sonnet-building-a-romantic-responsive-web-experience-9294115995e8
+
+## Michael's case study article:
+https://medium.com/@michaelomonedo001/a-case-study-on-sonnet-2f7f1a4d92c7
+
 ## Project Overview
 
 **Sonnet** is a minimal web experience that allows users to share songs paired with personal notes in a beautifully designed, distraction-free environment. The platform creates a dedicated, intentional space for musical expression that feels special and intimate.
