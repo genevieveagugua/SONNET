@@ -18,7 +18,8 @@ Here: [https://www.canva.com/design/DAHBKG5AyL4/jFfYFtQun9lq300hvGqayg/edit](htt
 
 ---
 
-## Genevieve's case study article: https://medium.com/@kelechigenevieveagugua/sonnet-building-a-romantic-responsive-web-experience-9294115995e8
+## Genevieve's case study article:
+https://medium.com/@kelechigenevieveagugua/sonnet-building-a-romantic-responsive-web-experience-9294115995e8
 
 ## Michael's case study article:
 https://medium.com/@michaelomonedo001/a-case-study-on-sonnet-2f7f1a4d92c7
@@ -52,6 +53,7 @@ Sonnet solves this by providing:
 - **Personal Notes**: Add handwritten-style messages to accompany each song
 - **Unique Links**: Generate shareable URLs for each song-note combination
 - **Beautiful UI**: Clean, romantic, night-themed design aesthetic
+- **Recipient View Page**: Dedicated page (`view.html`) for viewing shared notes
 - **No Account Required**: Recipients can view and listen without signing up
 
 ---
@@ -60,6 +62,7 @@ Sonnet solves this by providing:
 
 - **Case Study**: [View Case Study](https://docs.google.com/document/d/15X_3DtUJAiMyS-o46CSNJ9M9vR2FN7ia93LIqPqBHb4/edit?usp=sharing)
 - **Design Documentation**: [View Design Doc](https://docs.google.com/document/d/1zwVRbC8uryUu1RaW0j-f-TYvx-Y95S5pBJiQAvoa3Bs/edit?tab=t.0)
+- **JavaScript Implementation**: `README-JS.md`
 
 ---
 
@@ -68,7 +71,7 @@ Sonnet solves this by providing:
 ### Frontend
 - **HTML5**: Semantic markup and structure
 - **CSS3**: Custom properties (CSS variables), Flexbox, Grid
-- **Vanilla JavaScript**: (Planned for form interactions)
+- **Vanilla JavaScript**: URL query parsing and preview rendering (`app.js`)
 
 ### Design System
 - **Architecture**: Modular CSS with separation of concerns
@@ -86,6 +89,18 @@ Sonnet solves this by providing:
 
 ---
 
+## JavaScript Functionality
+
+When loaded on `preview.html`, `app.js` adds lightweight client-side behavior for the preview experience:
+
+- Reads form values passed as URL query parameters from `create.html`.
+- Checks for missing values and shows an alert if any are absent.
+- Injects `from`, `to`, and `message` content into the preview markup (expects elements with IDs `from`, `to`, and `message` on `preview.html`).
+
+For a detailed breakdown, see `README-JS.md`.
+
+---
+
 ## Project Structure
 
 ```
@@ -95,6 +110,8 @@ SONNET/
 ├── signup.html             # User registration page
 ├── create.html             # Note composition page
 ├── preview.html            # Song-note preview page
+├── view.html               # Song-note view page for recipients
+├── app.js                  # Logic and functionality
 ├── images/                 # Image assets
 │   ├── hero-image.png
 │   ├── pen.png
