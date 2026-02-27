@@ -1,39 +1,189 @@
-    :root {
-      --background: #1a0b0e;
-      --foreground: #fdf5f6;
-      --border: #3a1a27;
-      --input: #2d1418;
-      --primary: #f22b6d;
-      --primary-foreground: #fdf5f6;
-      --secondary: #2d1418;
-      --secondary-foreground: #fdf5f6;
-      --muted: #2b151c;
-      --muted-foreground: #a38b8e;
-      --success: #214030;
-      --success-foreground: #e6f9f0;
-      --accent: #ff8da1;
-      --accent-foreground: #1a0b0e;
-      --destructive: #550019;
-      --destructive-foreground: #ffecef;
-      --warning: #4a2a16;
-      --warning-foreground: #ffefd8;
-      --card: #2a1218;
-      --card-foreground: #fdf5f6;
-      --sidebar: #16070a;
-      --sidebar-foreground: #fdf5f6;
-      --sidebar-primary: #3b1723;
-      --sidebar-primary-foreground: #fdf5f6;
-      --radius-sm: 4px;
-      --radius-md: 8px;
-      --radius-lg: 12px;
-      --radius-xl: 18px;
-      --font-family-body: Shantell Sans;
-    }
+:root {
+  /* Colors */
+  --background: #1a0b0e;
+  --foreground: #fdf5f6;
+  --border: #3a1a27;
+  --input: #2d1418;
+  --primary: #f22b6d;
+  --primary-foreground: #fdf5f6;
+  --secondary: #2d1418;
+  --secondary-foreground: #fdf5f6;
+  --muted: #2b151c;
+  --muted-foreground: #a38b8e;
+  --success: #214030;
+  --success-foreground: #e6f9f0;
+  --accent: #ff8da1;
+  --accent-foreground: #1a0b0e;
+  --destructive: #550019;
+  --destructive-foreground: #ffecef;
+  --warning: #4a2a16;
+  --warning-foreground: #ffefd8;
+  --card: #2a1218;
+  --card-foreground: #fdf5f6;
+  --sidebar: #16070a;
+  --sidebar-foreground: #fdf5f6;
+  --sidebar-primary: #3b1723;
+  --sidebar-primary-foreground: #fdf5f6;
 
-    body {
-      font-family: var(--font-family-body);
-      margin: 0;
-      padding: 0;
-    }
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 18px;
 
-    
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 64px;
+
+  /* Typography Sizes */
+  --text-sm: 1em;
+  --text-nm: 1.5em;
+  --text-md: 2em;
+  --text-lg: 3em;
+  --text-xl: 4em;
+
+  /* Container Widths */
+  --width-container: 1200px;
+  --width-container-sm: 900px;
+  --width-container-mobile-sidebar: 250px;
+
+  /* Container Heights */
+  --height-container: 100vh;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Font Families */
+  --font-family-body: Shantell Sans;
+}
+
+/* GLOBAL RESETS & BASE STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* BASE TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 var(--spacing-sm) 0;
+  color: var(--foreground);
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  margin: 0 0 var(--spacing-md) 0;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 0;
+  padding: var(--spacing-md) 0;
+  font-style: italic;
+  border-left: 3px solid var(--primary);
+  padding-left: var(--spacing-md);
+  color: var(--muted-foreground);
+}
+
+/* UTILITY CLASSES */
+
+/* Text utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}
+
+.text-medium {
+  font-size: 0.9rem;
+}
+
+/* Flex utilities */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
+/* Layout utilities */
+.full-width {
+  width: 100%;
+}
+
+.max-width-sm {
+  max-width: 500px;
+}
+
+.max-width-md {
+  max-width: 900px;
+}
+
+/* Card base */
+.card-base {
+  background: var(--card);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+/* Section base */
+.section-base {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  width: 100%;
+}

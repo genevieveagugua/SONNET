@@ -1,4 +1,4 @@
- <html lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,32 +11,52 @@
       href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body>
-    <form>
-      <h4>Welcome back</h4>
-      <p>Continue your midnight melody journey.</p>
-      
-      <label for="email">Email address</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="name@example.com"
-      />
+    <header>
+      <nav class="nav__container">
+        <a href="index.html">SONNET</a>
+      </nav>
+    </header>
 
-      <label for="password">Password</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Enter your password"
-      />
+    <main>
+      <section>
+        <form class="form-centered card-base full-width max-width-sm flex-col gap-md">
+          <h4 class="text-center">Welcome back</h4>
+          <p class="text-center text-medium">Continue your midnight melody journey.</p>
+          
+          <div class="field-group flex-col gap-sm">
+            <label for="email" class="text-small">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              placeholder="adalovelace@me.com"
+            />
+          </div>
 
-      <button type="submit">Log in</button>
-      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-      <p>By clicking continue, you agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-    </form>
+          <div class="field-group flex-col gap-sm">
+            <label for="password" class="text-small">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <button type="submit">Log in</button>
+          <p class="text-center text-small">Don't have an account? <a href="signup.html">Sign up</a></p>
+          <p class="text-center text-small">
+            By clicking continue, you agree to our
+            <a href="terms.html">Terms of Service</a> and
+            <a href="privacy.html">Privacy Policy</a>.
+          </p>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
