@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CreateNote</title>
+    <title>Create Note</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/component.css" />
     <link rel="stylesheet" href="styles/layout.css" />
@@ -13,27 +13,65 @@
     />
   </head>
   <body>
-    <form>
-      <h4>Compose your note</h4>
-      <p>Share a song that speaks for you, along with a personal message.</p>
-      <label for="song-link">Song link</label>
-      <input type="text" id="song-link" name="song-link" placeholder="https://open.spotify.com/track/... Copy and paste a link from Spotify, Apple Music, or YouTube Music" />
+    <header>
+      <nav class="nav__container">
+        <a href="index.html">SONNET</a>
+      </nav>
+    </header>
+    <main>
+    <section>
+      <form id="sonnet-note" method="get" action="preview.html" class="form-centered card-base full-width max-width-sm flex-col gap-md">
+        <h4 class="text-center">Compose your note</h4>
+        <p class="text-center text-medium">Share a song that speaks for you, along with a personal message.</p>
+        
+        <div class="field-group flex-col gap-sm">
+          <label for="song-link" class="text-small">Song link</label>
+          <input
+            type="url"
+            id="song-link"
+            name="song-link"
+            required
+            placeholder="Copy and paste a link from Spotify"
+          />
+        </div>
 
-      <label for="From">From</label>
-      <input type="text" id="from-name" name="from-name" placeholder="Your name" />
-
-      <label for="to">To</label>
-      <input
-        type="text"
-        id="to-name"
-        name="to-name"
-        placeholder="Recipient's name"
-      />
-
-      <label for="your-note">Your note</label>
-      <textarea id="your-note" name="your-note" placeholder="Write a heartfelt message here..."></textarea>
-
-      <button class="btn-primary">Preview Note</button>
-    </form>
+        <div class="field-row flex-row gap-md">
+          <div class="field-group flex-col gap-sm">
+            <label for="from-name" class="text-small">From</label>
+            <input
+              type="text"
+              id="from-name"
+              name="from-name"
+              required
+              placeholder="Your name"
+            />
+          </div>
+          
+          <div class="field-group flex-col gap-sm">
+            <label for="to-name" class="text-small">To</label>
+            <input
+              type="text"
+              id="to-name"
+              name="to-name"
+              required
+              placeholder="Recipient's name"
+            />
+          </div>
+        </div>
+        
+        <div class="field-group flex-col gap-sm">
+          <label for="your-note" class="text-small">Your note</label>
+          <textarea
+            id="your-note"
+            name="your-note"
+            required
+            placeholder="Write a heartfelt message here..."
+          ></textarea>
+        </div>
+        
+        <button type="submit" class="btn-primary">Preview Note</button>
+      </form>
+    </section>
+    </main>
   </body>
 </html>
