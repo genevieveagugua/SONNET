@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Note</title>
+    <title>Create Note</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/component.css" />
     <link rel="stylesheet" href="styles/layout.css" />
@@ -20,7 +21,7 @@
     </header>
     <main>
     <section>
-      <form action="preview.html" class="form-centered card-base full-width max-width-sm flex-col gap-md">
+      <form id="sonnet-note" method="get" action="preview.html" class="form-centered card-base full-width max-width-sm flex-col gap-md">
         <h4 class="text-center">Compose your note</h4>
         <p class="text-center text-medium">Share a song that speaks for you, along with a personal message.</p>
         
@@ -31,7 +32,7 @@
             id="song-link"
             name="song-link"
             required
-            placeholder="Copy and paste a link from Spotify, Apple Music, or YouTube Music"
+            placeholder="Copy and paste a link from Spotify"
           />
         </div>
 

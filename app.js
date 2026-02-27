@@ -15,4 +15,8 @@ if (!song || !from || !to || !note) {
 // Populate text
 document.getElementById("from").textContent = from;
 document.getElementById("to").textContent = to;
-document.getElementById("message").textContent = "${note}";
+document.getElementById("message").textContent = `"${note}"`;
+
+// Spotify embed
+const embedUrl = song.replace("open.spotify.com/", "open.spotify.com/embed/");
+document.getElementById("spotify-player").src = embedUrl;
