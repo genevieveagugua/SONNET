@@ -1,0 +1,61 @@
+view.html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Note</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/component.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/de3cc7cb54.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav__container">
+        <a href="index.html">SONNET</a>
+      </nav>
+    </header>
+    <main class="preview-page">
+      <section class="preview-card card-base flex-col gap-md">
+        <!-- Live page for viewing link -->
+        <!-- Spotify Embed -->
+        <iframe
+          data-testid="embed-iframe"
+          id="spotify-player"
+          style="border-radius: 12px"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen=""
+          allow="
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            fullscreen;
+            picture-in-picture;
+          "
+          loading="lazy"
+        ></iframe>
+
+        <!-- Message Content -->
+        <article class="note">
+          <header class="note-header">
+            <p class="to">To <strong id="to"></strong></p>
+          </header>
+          <p class="message" id="message"></p>
+          <p class="from">- <strong id="from"></strong></p>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
