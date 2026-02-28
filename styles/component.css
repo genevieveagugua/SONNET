@@ -123,6 +123,10 @@ textarea:focus {
   border-color: var(--primary);
 }
 
+textarea {
+  resize: vertical;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: var(--muted-foreground);
