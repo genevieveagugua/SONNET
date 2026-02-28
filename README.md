@@ -18,6 +18,12 @@ Here: [https://www.canva.com/design/DAHBKG5AyL4/jFfYFtQun9lq300hvGqayg/edit](htt
 
 ---
 
+## Week 4 Presentation
+
+Here: [https://www.canva.com/design/DAHCi0zH_tg/OLKAv0l969MFOtG11Tr_0Q/edit?utm_content=DAHCi0zH_tg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAHCi0zH_tg/OLKAv0l969MFOtG11Tr_0Q/edit?utm_content=DAHCi0zH_tg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+---
+
 ## Genevieve's case study article:
 https://medium.com/@kelechigenevieveagugua/sonnet-building-a-romantic-responsive-web-experience-9294115995e8
 
