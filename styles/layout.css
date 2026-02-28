@@ -170,8 +170,8 @@
 /* FOOTER LAYOUT */
 
 footer {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-md);
   padding: var(--spacing-xl) var(--spacing-md);
   text-align: center;
@@ -191,6 +191,11 @@ footer nav {
 /* RESPONSIVE: TABLET (min-width: 640px) */
 
 @media (min-width: 640px) {
+
+  header {
+    gap: 50px;
+  }
+
   /* Keep hamburger menu on tablet */
   .nav__container > a:not(:first-child) {
     display: none;
@@ -272,6 +277,7 @@ footer nav {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     margin-bottom: var(--spacing-2xl);
+    gap: 50px;
   }
 
   .nav__container {

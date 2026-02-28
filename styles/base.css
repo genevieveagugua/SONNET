@@ -1,26 +1,37 @@
 :root {
+--font-family-body: "Shantell Sans", "Comic Sans MS", "Bradley Hand", cursive, sans-serif;
+
   /* Colors */
+  /* Base surfaces */
   --background: #1a0b0e;
+  --card: #2a1218;
+  --muted: #2b151c;
+  --sidebar: #16070a;
+
+  /* Text and borders */
   --foreground: #fdf5f6;
+  --muted-foreground: #a38b8e;
   --border: #3a1a27;
   --input: #2d1418;
+
+  /* Brand */
   --primary: #f22b6d;
   --primary-foreground: #fdf5f6;
   --secondary: #2d1418;
   --secondary-foreground: #fdf5f6;
-  --muted: #2b151c;
-  --muted-foreground: #a38b8e;
-  --success: #214030;
-  --success-foreground: #e6f9f0;
   --accent: #ff8da1;
   --accent-foreground: #1a0b0e;
-  --destructive: #550019;
-  --destructive-foreground: #ffecef;
+
+  /* Status */
+  --success: #214030;
+  --success-foreground: #e6f9f0;
   --warning: #4a2a16;
   --warning-foreground: #ffefd8;
-  --card: #2a1218;
+  --destructive: #550019;
+  --destructive-foreground: #ffecef;
+
+  /* Sidebar */
   --card-foreground: #fdf5f6;
-  --sidebar: #16070a;
   --sidebar-foreground: #fdf5f6;
   --sidebar-primary: #3b1723;
   --sidebar-primary-foreground: #fdf5f6;
@@ -57,8 +68,6 @@
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
-  /* Font Families */
-  --font-family-body: Shantell Sans;
 }
 
 /* GLOBAL RESETS & BASE STYLES */
