@@ -59,16 +59,52 @@
             />
           </div>
         </div>
+
+        <div class="field-group flex-col gap-sm">
+          <label for="occasion" class="text-small">Occasion</label>
+          <input
+            type="text"
+            id="occasion"
+            name="occasion"
+            placeholder="Birthday, Anniversary, Just because..."
+          />
+        </div>
+
+        <div class="field-group flex-col gap-sm">
+          <label for="vibe" class="text-small">Vibe</label>
+          <input
+            type="text"
+            id="vibe"
+            name="vibe"
+            placeholder="Romantic, nostalgic, comforting, playful..."
+          />
+        </div>
         
         <div class="field-group flex-col gap-sm">
           <label for="your-note" class="text-small">Your note</label>
           <textarea
             id="your-note"
             name="your-note"
+            rows="8"
             required
             placeholder="Write a heartfelt message here..."
           ></textarea>
         </div>
+
+        <section class="ai-generator">
+          <h5>Need help finding the right words?</h5>
+          <p>
+            Tell us the occasion and the vibe you're going for, and let AI help you write a heartfelt note.
+          </p>
+          <button
+            type="button"
+            id="generate-note"
+            class="btn-secondary"
+          >
+            Generate with AI
+          </button>
+          <p id="ai-status" class="text-small"></p>
+        </section>
         
         <button type="submit" class="btn-primary">Preview Note</button>
       </form>
